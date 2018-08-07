@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>HotelDeMartin</title>
-<!-- for-mobile-apps -->
+
 
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
@@ -71,18 +71,7 @@
 									</div>
 									<div class="clearfix"> </div>	
 								</nav>
-									<div class="w3ls_search">
-													<div class="cd-main-header">
-														<ul class="cd-header-buttons">
-															<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
-														</ul> <!-- cd-header-buttons -->
-													</div>
-													<div id="cd-search" class="cd-search">
-														<form action="#" method="post">
-															<input name="Search" type="search" placeholder="Search...">
-														</form>
-													</div>
-												</div>
+
 					
 							</div> 
 
