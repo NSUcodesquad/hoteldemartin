@@ -16,6 +16,12 @@
 
                     You are logged in!
                 </div>
+                <button type="submit" class="button button1">
+                        <a class="nav-link" href="\posts">{{ __('Books') }}</a></button>
+
+                             <button type="submit" class="button button1">
+                        <a class="nav-link" href="\reserve">{{ __('Reserve') }}</a></button>
+
             </div>
         </div>
     </div>

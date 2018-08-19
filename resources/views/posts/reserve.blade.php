@@ -137,36 +137,9 @@
 
 
 
-        <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <!-- <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a> -->
-
-								<button type="submit" class="button button1">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></button>
-
-                            </li>
-                            <li class="nav-item">
-                                <!-- <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a> -->
-
-								 <button type="submit" class="button button1">
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></button>
 
 
-                            </li>
-                        @else
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -187,17 +160,105 @@
                             </li>
 
 
-							
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
+
+
+
+
+
+
+
+
+
+	<!-- about-bottom -->
+	<div class="about-bottom", id="ab">
+	<div class="col-md-6 w3l_about_bottom_right two">
+			<h3 class="tittle why">Book a Reservation</h3>
+			<div class="book-form">
+
+			   <form action="#" method="post">
+					<div class="col-md-6 form-date-w3-agileits">
+						<label><i class="fa fa-user" aria-hidden="true"></i> Name :</label>
+						<input id= "name" type="text" name="name" placeholder="Your name" required="">
+					</div>
+					<div class="col-md-6 form-date-w3-agileits second-agile">
+						<label><i class="fa fa-envelope" aria-hidden="true"></i> Email :</label>
+						<input id = "email" type="email" name="email" placeholder="Your email" required="">
+					</div>
+					 <div class="col-md-6 form-date-w3-agileits">
+									<label><i class="fa fa-calendar" aria-hidden="true"></i> Arrival Date :</label>
+									<input  id="reservefrom" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+								
+								</div>
+					<div class="col-md-6 form-time-w3layouts second-agile">
+							<label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
+							<input id="time" type="time">
+					</div>
+					<div class="col-md-6 form-date-w3-agileits">
+						        <label><i class="fa fa-calendar" aria-hidden="true"></i> Departure Date :</label>
+									<input  id="reserveto" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+									
+								</div>
+					<div class="col-md-6 form-time-w3layouts second-agile">
+							<label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
+							<input type="time">
+					</div>
+					<div class="col-md-6 form-left-agileits-w3layouts bottom-w3ls">
+							<label><i class="fa fa-home" aria-hidden="true"></i> Choose a Room :</label>
+							<select class="form-control">
+								<option></option>
+								<option>Standard Double Room</option>
+								<option>Standard Family Room</option>
+								<option>Garden Family Room</option>
+								<option>Deluxe Double Room</option>
+								<option>Executive Junior Suite</option>
+								<option>Maisonette</option>
+							</select>
+					</div>
+					<div class="col-md-6 form-left-agileits-w3layouts second-agile">
+							<label><i class="fa fa-users" aria-hidden="true"></i> No.of People :</label>
+							<select class="form-control">
+								<option></option>
+								<option>1 Person</option>
+								<option>2 People</option>
+								<option>3 People</option>
+								<option>4 People</option>
+								<option>5 People</option>
+								<option>More</option>
+							</select>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
+						  <input type="submit" value="Make a Reservation">
+					</div>
+			</form>
+								</div>
+
+		</div>
+		<div class="col-md-6 w3l_about_bottom_left">
+			
+<img src="images/33.jpg" alt="" class="img-responsive" />
+			<div class="w3l_about_bottom_left_video book-text">
+				<h4>BooK Now</h4>
+			</div>
+		</div>
+		
+		<div class="clearfix"> </div>
+	</div>
+<!-- //about -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -367,8 +428,6 @@
 <!-- //for bootstrap working -->
 </body>
 </html>
-
-
 
 
 

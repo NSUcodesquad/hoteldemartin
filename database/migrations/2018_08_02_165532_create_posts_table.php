@@ -15,7 +15,14 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
+            $table->string('name');
+            $table->string('email');
+            $table->integer('roomtype');
+            $table->integer('persons');
+            $table->date('reservefrom');
+            $table->date('reserveto');
+            $table->mediumText('address');
+            $table->bigInteger('phone no');
             $table->timestamps();
         });
     }
