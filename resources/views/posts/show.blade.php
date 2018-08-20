@@ -143,6 +143,13 @@
     <div class="w3_content_agilleinfo_inner">
 	<div class="container">
     <h3>{{$posts->name}}</h3>
+	<h3>{{$posts->email}}</h3>
+	<h3>{{$posts->phoneno}}</h3>
+	<h3>{{$posts->reservefrom}}</h3>
+	<h3>{{$posts->reserveto}}</h3>
+	<h3>{{$posts->persons}}</h3>
+	<h3>{{$posts->roomtype}}</h3>
+
 	</div>
 	</div>
 

@@ -141,24 +141,39 @@
 	<div class="container">
 
     
-<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+	<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+    {{ Auth::user()->name }} <span class="caret"></span></a>
 
-    
-            @if(count($posts) > 0) 
-			    @foreach($posts as $posts) 
-                <div class = 'well' >
-                <h3><a href = "\posts\{{$posts -> id}}"> {{$posts->name}}</a></h3>
-				@endforeach
+    		@if({{ Auth::user()->email }} == {{$posts->email}} )
+					@if(count($posts) > 0) 
+						@foreach($posts as $posts) 
+						<div class = 'well' >
+						<h3><a href = "\posts\{{$posts -> id}}"> {{$posts->name}}</a></h3>
+						<h3>{{$posts->email}}</h3>
+						<h3>{{$posts->phoneno}}</h3>
+						<h3>{{$posts->address}}</h3>
+						<h3>{{$posts->reservefrom}}</h3>
+						<h3>{{$posts->reserveto}}</h3>
+						<h3>{{$posts->persons}}</h3>
+						<h3>{{$posts->roomtype}}</h3>
+						@endforeach
 
 
 
-            @else
-            	<p> no post found </p>
-    
-    
-            @endif 
+					@else
+						<p> no post found </p>
+			
+			
+					@endif 
+
+
+			
+
+			@else
+            <p> no post found </p>
+			@endif 
+
+
     
 
 

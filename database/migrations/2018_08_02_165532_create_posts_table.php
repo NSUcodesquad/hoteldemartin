@@ -22,7 +22,7 @@ class CreatePostsTable extends Migration
             $table->date('reservefrom');
             $table->date('reserveto');
             $table->mediumText('address');
-            $table->bigInteger('phone no');
+            $table->integer('phoneno');
             $table->timestamps();
         });
     }

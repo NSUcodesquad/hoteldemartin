@@ -169,83 +169,45 @@
 
 
 
+{!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+        <div class="form-group">
+            {{Form::label('name', 'Name')}}
+            {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Name'])}}
+        </div>
+        <div class="form-group">
+            {{Form::label('email', 'Email')}}
+            {{Form::email('email', '', ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'email'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('phoneno', 'Phone No')}}
+            {{Form::number('phoneno', '', ['id' => 'phone no', 'class' => 'form-control', 'placeholder' => 'phoneno'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('address', 'Address')}}
+            {{Form::text('address', '', ['id' => 'address', 'class' => 'form-control', 'placeholder' => 'address'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('reservefrom', 'Reserve From')}}
+            {{Form::date('reservefrom', '', ['id' => 'reservefrom', 'class' => 'form-control', 'placeholder' => 'reservefrom'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('reserveto', 'Reserve to')}}
+            {{Form::date('reserveto', '', ['id' => 'reserveto', 'class' => 'form-control', 'placeholder' => 'reserveto'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('persons', 'Persons')}}
+            {{Form::number('persons', '', ['id' => 'persons', 'class' => 'form-control', 'placeholder' => 'persons'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('roomtype', 'Room Type')}}
+            {{Form::number('roomtype', '', ['id' => 'roomtype', 'class' => 'form-control', 'placeholder' => 'roomtype'])}}
+        </div>
+        {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
+    {!! Form::close() !!}
 
-	<!-- about-bottom -->
-	<div class="about-bottom", id="ab">
-	<div class="col-md-6 w3l_about_bottom_right two">
-			<h3 class="tittle why">Book a Reservation</h3>
-			<div class="book-form">
 
-			   <form action="#" method="post">
-					<div class="col-md-6 form-date-w3-agileits">
-						<label><i class="fa fa-user" aria-hidden="true"></i> Name :</label>
-						<input id= "name" type="text" name="name" placeholder="Your name" required="">
-					</div>
-					<div class="col-md-6 form-date-w3-agileits second-agile">
-						<label><i class="fa fa-envelope" aria-hidden="true"></i> Email :</label>
-						<input id = "email" type="email" name="email" placeholder="Your email" required="">
-					</div>
-					 <div class="col-md-6 form-date-w3-agileits">
-									<label><i class="fa fa-calendar" aria-hidden="true"></i> Arrival Date :</label>
-									<input  id="reservefrom" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-								
-								</div>
-					<div class="col-md-6 form-time-w3layouts second-agile">
-							<label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
-							<input id="time" type="time">
-					</div>
-					<div class="col-md-6 form-date-w3-agileits">
-						        <label><i class="fa fa-calendar" aria-hidden="true"></i> Departure Date :</label>
-									<input  id="reserveto" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-									
-								</div>
-					<div class="col-md-6 form-time-w3layouts second-agile">
-							<label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
-							<input type="time">
-					</div>
-					<div class="col-md-6 form-left-agileits-w3layouts bottom-w3ls">
-							<label><i class="fa fa-home" aria-hidden="true"></i> Choose a Room :</label>
-							<select class="form-control">
-								<option></option>
-								<option>Standard Double Room</option>
-								<option>Standard Family Room</option>
-								<option>Garden Family Room</option>
-								<option>Deluxe Double Room</option>
-								<option>Executive Junior Suite</option>
-								<option>Maisonette</option>
-							</select>
-					</div>
-					<div class="col-md-6 form-left-agileits-w3layouts second-agile">
-							<label><i class="fa fa-users" aria-hidden="true"></i> No.of People :</label>
-							<select class="form-control">
-								<option></option>
-								<option>1 Person</option>
-								<option>2 People</option>
-								<option>3 People</option>
-								<option>4 People</option>
-								<option>5 People</option>
-								<option>More</option>
-							</select>
-					</div>
-					<div class="clearfix"> </div>
-					<div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
-						  <input type="submit" value="Make a Reservation">
-					</div>
-			</form>
-								</div>
 
-		</div>
-		<div class="col-md-6 w3l_about_bottom_left">
-			
-<img src="images/33.jpg" alt="" class="img-responsive" />
-			<div class="w3l_about_bottom_left_video book-text">
-				<h4>BooK Now</h4>
-			</div>
-		</div>
-		
-		<div class="clearfix"> </div>
-	</div>
-<!-- //about -->
+
 
 
 

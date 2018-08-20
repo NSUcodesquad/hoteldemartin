@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Posts;
+use DB;
 
 class PostsController extends Controller
 {
@@ -14,8 +15,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $post =  posts::all();
-        return view('posts.index')->with('posts', $post);
+        $posts =  Posts::all();
+        return view('posts.index')->with('posts', $posts);
     }
 
     /**
@@ -25,7 +26,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.reserve');
     }
 
     /**
@@ -43,18 +44,21 @@ class PostsController extends Controller
             'persons' => 'required',
             'reservefrom' => 'required',
             'reserveto' => 'required',
-            'phonenumber' => 'required'
+            'phoneno' => 'required'
         ]);
 
         // Create Post
-        $post = new Post;
-        $post->name = $request->input('name');
-        $post->email = $request->input('email');
-        $post->reservefrom = $request->input('reservefrom');
-        $post->reserveto = $request->input('reserveto');
-        $post->user_id = auth()->user()->id;
-        $post->cover_image = $fileNameToStore;
-        $post->save();
+        $posts = new Posts;
+        $posts->name = $request->input('name');
+        $posts->email = $request->input('email');
+        $posts->reservefrom = $request->input('reservefrom');
+        $posts->reserveto = $request->input('reserveto');
+        $posts->persons = $request->input('persons');
+        $posts->roomtype = $request->input('roomtype');
+        $posts->phoneno = $request->input('phoneno');
+        $posts->address= $request->input('address');
+        $posts->id = auth()->user()->id;
+        $posts->save();
         return redirect('/posts')->with('success', 'Post Created');
     }
 
@@ -68,8 +72,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        $post = Posts::find($id);
-        return view('posts.show') -> with('post', $post); 
+        $posts = Posts::find($id);
+        return view('posts.show') -> with('posts', $posts); 
     }
 
     /**
