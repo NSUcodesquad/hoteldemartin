@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 use App\Posts;
 use DB;
 
-
-class PostsController extends Controller
+class ReviewContoller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +16,7 @@ class PostsController extends Controller
     public function index()
     {
         $posts =  Posts::all();
-        return view('posts.index')->with('posts', $posts);
+        return view('review.index')->with('posts', $posts);
     }
 
     /**
@@ -25,9 +24,9 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createreview()
     {
-        return view('posts.reserve');
+        return view('review.review');
     }
 
     /**
@@ -36,33 +35,27 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function storereview(Request $request)
     {
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required',
-            'roomtype' => 'required',
-            'persons' => 'required',
-            'reservefrom' => 'required',
-            'reserveto' => 'required',
-            'phoneno' => 'required'
+            'invoiceno' => 'required',
+            'body' => 'required',
+            'rate' => 'required'
         ]);
 
         // Create Post
         $posts = new Posts;
         $posts->name = $request->input('name');
         $posts->email = $request->input('email');
-        $posts->reservefrom = $request->input('reservefrom');
-        $posts->reserveto = $request->input('reserveto');
-        $posts->persons = $request->input('persons');
-        $posts->roomtype = $request->input('roomtype');
-        $posts->phoneno = $request->input('phoneno');
-        $posts->address= $request->input('address');
+        $posts->invoiceno = $request->input('invoiceno');
+        $posts->body = $request->input('body');
+        $posts->rate = $request->input('rate');
         $posts->id = auth()->user()->id;
         $posts->save();
-        return redirect('/posts')->with('success', 'Post Created');
+        return redirect('/postsreview')->with('success', 'Post Created');
     }
-
 
     /**
      * Display the specified resource.
@@ -70,10 +63,10 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function showreview($id)
     {
         $posts = Posts::find($id);
-        return view('posts.show') -> with('posts', $posts); 
+        return view('review.show') -> with('posts', $posts); 
     }
 
     /**
@@ -82,7 +75,7 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function editreview($id)
     {
         //
     }

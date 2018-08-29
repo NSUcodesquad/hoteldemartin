@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Posts;
+//use App\Posts;
 use DB;
+use App\Http\Requests;
 
-
-class PostsController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts =  Posts::all();
-        return view('posts.index')->with('posts', $posts);
+       // $contact =  Contact::all();
+        return view('pages.contact');
     }
 
     /**
@@ -27,7 +27,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('posts.reserve');
+        return view('pages.contact');
     }
 
     /**
@@ -41,28 +41,27 @@ class PostsController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required',
-            'roomtype' => 'required',
-            'persons' => 'required',
-            'reservefrom' => 'required',
-            'reserveto' => 'required',
-            'phoneno' => 'required'
+            'phoneno' => 'required',
+            'msg' => 'required',
         ]);
 
-        // Create Post
-        $posts = new Posts;
-        $posts->name = $request->input('name');
-        $posts->email = $request->input('email');
-        $posts->reservefrom = $request->input('reservefrom');
-        $posts->reserveto = $request->input('reserveto');
-        $posts->persons = $request->input('persons');
-        $posts->roomtype = $request->input('roomtype');
-        $posts->phoneno = $request->input('phoneno');
-        $posts->address= $request->input('address');
-        $posts->id = auth()->user()->id;
-        $posts->save();
-        return redirect('/posts')->with('success', 'Post Created');
-    }
 
+        $contacts = [];
+
+        $contacts['name'] = $request->get('name');
+        $contacts['email'] = $request->get('email');
+        $contacts['msg'] = $request->get('msg');
+
+        // Create Post
+         // $contact = new Contact;
+      //  $contact->name = $request->input('name');
+       // $contact->email = $request->input('email');
+      //  $contact->phoneno = $request->input('phoneno');
+      //  $contact->msg = $request->input('msg');
+       // $contact->id = auth()->user()->id;
+      //  $contact->save();
+        return redirect('\contact')->with('success', 'Message Send');
+    }
 
     /**
      * Display the specified resource.
@@ -72,8 +71,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        $posts = Posts::find($id);
-        return view('posts.show') -> with('posts', $posts); 
+        $contact = Posts::find($id);
+        return view('contact.show') -> with('posts', $contacts); 
     }
 
     /**

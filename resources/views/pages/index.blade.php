@@ -21,10 +21,10 @@
   <div class="w3layouts-top-strip">
 			<div class="top-srip-agileinfo">
 				<div class="w3ls-social-icons text-left">
-					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-					<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-					<a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
-					<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+					<a class="facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+					<a class="twitter" href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+					<a class="pinterest" href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+					<a class="linkedin" href="https://bd.linkedin.com/"><i class="fa fa-linkedin"></i></a>
 					
 				</div>
 				<div class="agileits-contact-info text-right">
@@ -49,7 +49,7 @@
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
 										</button>
-										<h1><a  href="index.html"><span>Hotel</span>DeMartin<p class="s-log">Website</p></a>
+										<h1><a  href="\"><span>Hotel</span>DeMartin<p class="s-log">Website</p></a>
 										 
 										</h1>
 									</div>
@@ -93,7 +93,7 @@
 		  <div class="container">
 				   <div class="ab-w3l-spa">
 				        <h3 class="tittle">Welcome to Our Resort!</h3>
-						<p>we are the boossssss
+						<p>We assure you one of the most comfortable stay, outside from home in your desire holiday place
 							</p>
 				   </div>
 				<!-- services -->
@@ -104,7 +104,7 @@
 											<img src="images/5.jpg" alt="service-img">
 										</div>
 										<h3>Deluxe Room</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+										<p>Here, you can spend the deluxe suit with every facilities s like a mini-mension</p>
 									</div>
 								</div>
 								<div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
@@ -113,7 +113,7 @@
 											<img src="images/6.jpg" alt="service-img">
 										</div>
 										<h3>Luxury Room</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+										<p>Luxury at it's best, Need the luxary house book it.</p>
 									</div>
 								</div>
 								<div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
@@ -122,7 +122,7 @@
 											<img src="images/7.jpg" alt="service-img">
 										</div>
 										<h3>Swimming Pool</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+										<p>Relax youself with the touch of water.</p>
 									</div>
 								</div>
 								<div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
@@ -131,7 +131,7 @@
 											<img src="images/8.jpg" alt="service-img">
 										</div>
 										<h3>Spa Care</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+										<p>Got tired or need extra care try this, it will assure the perfect care.</p>
 									</div>
 								</div>
 								<div class="clearfix"> </div>
@@ -201,7 +201,7 @@
 		</div>
 		<div class="col-md-6 w3l_about_bottom_right one">
 			<h3 class="tittle why">why choose us ?</h3>
-			<p>Lorem Aenean aliquet nec mi et lacinia. Aliquam maximus iaculis mi, sed efficitur orci efficitur nec.</p>
+			<p>Need the Luxury with nature it's the best place with combining all.</p>
 			<div class="panel-group w3l_panel_group_faq" id="accordion" role="tablist" aria-multiselectable="true">
 			  <div class="panel panel-default">
 				<div class="panel-heading" role="tab" id="headingOne">
@@ -213,7 +213,7 @@
 				</div>
 				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 				  <div class="panel-body panel_text">
-					Lorem Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+					********
 				  </div>
 				</div>
 			  </div>
@@ -227,7 +227,7 @@
 				</div>
 				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 				   <div class="panel-body panel_text">
-					Lorem Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+				   ********
 				  </div>
 				</div>
 			  </div>
@@ -241,7 +241,7 @@
 				</div>
 				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 				   <div class="panel-body panel_text">
-					Lorem Amet quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+				   ********
 				  </div>
 				</div>
 				
@@ -256,7 +256,7 @@
 				</div>
 				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 				   <div class="panel-body panel_text">
-					Lorem Amet quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+				   ********
 				  </div>
 				</div>
 				
@@ -325,7 +325,7 @@
 					</div>
 					<div class="clearfix"> </div>
 					<div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
-						  <input type="submit" value="Make a Reservation">
+						  <input type="submit" a href="\login" value="Make a Reservation">
 					</div>
 			</form>
 								</div>
@@ -465,9 +465,9 @@
 							<li>
 								<div class="w3_agileits_testimonial_grid">
 								<i class="fa fa-quote-right" aria-hidden="true"></i>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-										dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>Awesome. Their service is just amazing. They picked me and greeted nicely.
+									Their suits are the luxariest I have seen so far. The room fasilities are beyond the
+									expectations. Foods, Spa, Pool, Play Ground are just amazing.</p>
 									<img src="images/admin.jpg" alt=" " class="img-responsive" />
 									
 								</div>
@@ -475,9 +475,9 @@
 							<li>
 								<div class="w3_agileits_testimonial_grid">
 								<i class="fa fa-quote-right" aria-hidden="true"></i>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-										dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>The most comfortable.Their service is just amazing. They picked me and greeted nicely.
+									Their suits are the luxariest I have seen so far. The room fasilities are beyond the
+									expectations. Foods, Spa, Pool, Play Ground are just amazing.</p>
 									<img src="images/admin2.jpg" alt=" " class="img-responsive" />
 									
 								</div>
@@ -485,15 +485,21 @@
 							<li>
 								<div class="w3_agileits_testimonial_grid">
 								<i class="fa fa-quote-right" aria-hidden="true"></i>
-									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-										dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>Like their facilities. Their service is just amazing. They picked me and greeted nicely.
+									Their suits are the luxariest I have seen so far. The room fasilities are beyond the
+									expectations. Foods, Spa, Pool, Play Ground are just amazing.</p>
 									<img src="images/admin.jpg" alt=" " class="img-responsive" />
 									
 								</div>
 							</li>
 						</ul>
 					</div>
+					     <button type="submit" class="button button1">
+                        <a class="nav-link" href="\review">{{ __('Reviews') }}</a></button>
+
+
+
+
 				</section>
 				
 				<!-- //flexSlider -->
@@ -510,8 +516,8 @@
 					<ul>
 						       <li><a href="\index">Home</a></li> 
 								<li><a href="\about">About</a></li> 
-								<li><a href="\codes">Gallery</a></li> 
-								<li><a href="\gallery">Login</a></li> 
+								<li><a href="\gallery">Gallery</a></li> 
+								<li><a href="\login">Login</a></li> 
 								<li><a href="\contact">Contact</a></li> 
 					</ul>
 				</div>
@@ -548,7 +554,7 @@
 					<h4>Connect with us</h4>
 					<section class="social">
                         <ul>
-							<li><a class="icon fb" href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a class="icon fb" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
 							<li><a class="icon tw" href="#"><i class="fa fa-twitter"></i></a></li>
 							
 							
@@ -665,5 +671,50 @@
 <!--js for bootstrap working-->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
+
+
+
+
+
+
+
+
+<!-- Button for LOGIN/REG -->
+<style>
+.button {
+    background-color: rgb(97, 185, 255); 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+
+.button1 {width: 100%;}
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
+</style>
+
+<!--// Button for LOGIN/REG -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

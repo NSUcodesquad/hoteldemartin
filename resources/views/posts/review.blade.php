@@ -137,30 +137,9 @@
 
 
 
-        <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
 
-                    </ul>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-								<button type="submit" class="button button1">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></button>
-                            </li>
-                            <li class="nav-item">
-								 <button type="submit" class="button button1">
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></button>
-                            </li>
-
-                        @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -181,17 +160,65 @@
                             </li>
 
 
-							
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
+
+
+
+
+
+
+
+
+{!! Form::open(['action' => 'PostsController@review', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+        <div class="form-group">
+            {{Form::label('name', 'Name')}}
+            {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Name'])}}
+        </div>
+        <div class="form-group">
+            {{Form::label('email', 'Email')}}
+            {{Form::email('email', '', ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'email'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('phoneno', 'Phone No')}}
+            {{Form::number('phoneno', '', ['id' => 'phone no', 'class' => 'form-control', 'placeholder' => 'phoneno'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('address', 'Address')}}
+            {{Form::text('address', '', ['id' => 'address', 'class' => 'form-control', 'placeholder' => 'address'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('reservefrom', 'Reserve From')}}
+            {{Form::date('reservefrom', '', ['id' => 'reservefrom', 'class' => 'form-control', 'placeholder' => 'reservefrom'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('reserveto', 'Reserve to')}}
+            {{Form::date('reserveto', '', ['id' => 'reserveto', 'class' => 'form-control', 'placeholder' => 'reserveto'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('persons', 'Persons')}}
+            {{Form::number('persons', '', ['id' => 'persons', 'class' => 'form-control', 'placeholder' => 'persons'])}}
+        </div>
+		<div class="form-group">
+            {{Form::label('roomtype', 'Room Type')}}
+            {{Form::number('roomtype', '', ['id' => 'roomtype', 'class' => 'form-control', 'placeholder' => 'roomtype'])}}
+        </div>
+        {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
+    {!! Form::close() !!}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -209,22 +236,22 @@
 				<div class="col-md-2 footer-info-grid links">
 					<h4>Quick links</h4>
 					<ul>
-						       <li><a href="index">Home</a></li> 
-								<li><a href="about">About</a></li> 
-								<li><a href="codes">Services</a></li> 
-								<li><a href="gallery">Gallery</a></li> 
-								<li><a href="contact">Contact</a></li> 
+						       <li><a href="/">Home</a></li> 
+								<li><a href="/about">About</a></li> 
+								<li><a href="/gallery">Gallery</a></li> 
+								<li><a href="/login">Login</a></li> 
+								<li><a href="/contact">Contact</a></li> 
 					</ul>
 				</div>
 				<div class="col-md-3 footer-info-grid address">
 					<h4>Address</h4>
 					<address>
 						<ul>
-							<li>Mexico United States 3000</li>
-							<li>40019 Honey Street</li>
-							<li>BO,Mexico</li>
-							<li>Telephone : +1 (734) 123-4567</li>
-							<li>Email : <a class="mail" href="mailto:mail@example.com">info(at)example.com</a></li>
+							<li>420, Hotel Motel Road</li>
+							<li>Kolatoli Beach, Cox's Bazar</li>
+							<li>Chittagong, Bangladesh</li>
+							<li>Telephone : +420 00112233</li>
+							<li>Email : <a class="mail" href="mailto:info@hoteldemartin.org">info(at)hoteldemartin.org</a></li>
 						</ul>
 					</address>
 				</div>
@@ -278,6 +305,13 @@
 			</div>
 	   </div>
      </div>
+
+		
+			<div class="w3agile_footer_copy">
+				    <p>© 2018 HOTELDEMARTIN. All rights reserved | Design by <a href="http://hoteldemartin.org/">CODEQUUAD</a></p>
+			</div>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 
 			<!--w3agile_footer_copy -->
 			<div class="w3agile_footer_copy">
@@ -361,8 +395,6 @@
 <!-- //for bootstrap working -->
 </body>
 </html>
-
-
 
 
 

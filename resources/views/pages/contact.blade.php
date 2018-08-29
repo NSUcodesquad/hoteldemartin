@@ -101,20 +101,25 @@
 								
 							</div>
 									<div class="w3_mail_grids">
-										<form action="#" method="post">
-											<div class="col-md-6 w3_agile_mail_grid">
-													<input type="text" placeholder="Your Name"  required="">
-													<input type="email" placeholder="Your Email" required="">
-													<input type="text" placeholder="Your Phone Number" required="">
-
-												
-											</div>
-											<div class="col-md-6 w3_agile_mail_grid">
-												<textarea name="Message" placeholder="Your Message" required=""></textarea>
-												<input type="submit" value="Submit">
-											</div>
-											<div class="clearfix"> </div>
-										</form>
+									{!! Form::open(['action' => 'ContactController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+										<div class="form-group">
+											{{Form::label('name', 'Name')}}
+											{{Form::text('name', '', ['id' => 'name','class' => 'form-control', 'placeholder' => 'Name'])}}
+										</div>
+										<div class="form-group">
+											{{Form::label('email', 'Email')}}
+											{{Form::email('email', '', ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'email'])}}
+										</div>
+										<div class="form-group">
+											{{Form::label('phoneno', 'Phone No')}}
+											{{Form::number('phoneno', '', ['id' => 'phone no', 'class' => 'form-control', 'placeholder' => 'phoneno'])}}
+										</div>
+										<div class="form-group">
+											{{Form::label('msg', 'Message')}}
+											{{Form::text('msg', '', ['id' => 'msg', 'class' => 'form-control', 'placeholder' => 'msg'])}}
+										</div>
+										{{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
+									{!! Form::close() !!}
 							</div>
 					   </div>
 							<div class=" map">

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -98,7 +97,7 @@
 							</div>
 							<div class="ab-w3l-spa">
 							 <img src="images/ab.jpg" alt="" class="img-responsive" />
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. ever since the 1500s.Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores hasellusMaecenas ac hendrerit purus. Lorem ipsum dolor sit amet.Lorem Ipsum is simply dummy text of the printing and typesetting industry
+								<p>We assure you one of the most comfortable stay, outside from home in your desire holiday place
 								</p>
 							</div>
 								<!-- services -->
@@ -109,7 +108,7 @@
 											<img src="images/5.jpg" alt="service-img">
 										</div>
 										<h3>Deluxe Room</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+										<p>Here, you can spend the deluxe suit with every facilities s like a mini-mension.</p>
 									</div>
 								</div>
 								<div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
@@ -118,7 +117,7 @@
 											<img src="images/6.jpg" alt="service-img">
 										</div>
 										<h3>Luxury Room</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+										<p>Luxury at it's best, Need the luxary house book it.</p>
 									</div>
 								</div>
 								<div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
@@ -127,7 +126,7 @@
 											<img src="images/7.jpg" alt="service-img">
 										</div>
 										<h3>Swimming Pool</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+										<p>Relax youself with the touch of water.</p>
 									</div>
 								</div>
 								<div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
@@ -136,7 +135,7 @@
 											<img src="images/8.jpg" alt="service-img">
 										</div>
 										<h3>Spa Care</h3>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+										<p>Got tired or need extra care try this, it will assure the perfect care.</p>
 									</div>
 								</div>
 								<div class="clearfix"> </div>
@@ -433,77 +432,24 @@
 	<!-- Modal1 -->
 						<div class="modal fade" id="myModal1" role="dialog">
 							<div class="modal-dialog">
-							<!-- Modal content-->
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal">&times;</button>
-										<h4>Reservation Form</h4>
-											<div class="book-form-inner">
-
-											   <form action="#" method="post">
-													<div class="col-md-6 form-date-w3-agileits1">
-														<label><i class="fa fa-user" aria-hidden="true"></i> Name :</label>
-														<input type="text" name="name" placeholder="Your name" required="">
-													</div>
-													<div class="col-md-6 form-date-w3-agileits1 second-agile1">
-														<label><i class="fa fa-envelope" aria-hidden="true"></i> Email :</label>
-														<input type="email" name="email" placeholder="Your email" required="">
-													</div>
-													  <div class="col-md-6 form-date-w3-agileits">
-																<label><i class="fa fa-calendar" aria-hidden="true"></i> Arrival Date :</label>
-																<input  id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-															
-															</div>
-												<div class="col-md-6 form-time-w3layouts second-agile">
-														<label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
-														<input type="time">
-												</div>
-												<div class="col-md-6 form-date-w3-agileits">
-															<label><i class="fa fa-calendar" aria-hidden="true"></i> Departure Date :</label>
-																<input  id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-																
-															</div>
-													<div class="col-md-6 form-time-w3layouts1 second-agile1">
-															<label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
-															<input type="time">
-													</div>
-													<div class="col-md-6 form-left-agileits-w3layouts1 bottom-w3ls1">
-															<label><i class="fa fa-home" aria-hidden="true"></i> Choose a Room :</label>
-															<select class="form-control">
-																<option></option>
-																<option>Standard Double Room</option>
-																<option>Standard Family Room</option>
-																<option>Garden Family Room</option>
-																<option>Deluxe Double Room</option>
-																<option>Executive Junior Suite</option>
-																<option>Maisonette</option>
-															</select>
-													</div>
-													<div class="col-md-6 form-left-agileits-w3layouts1 second-agile1">
-															<label><i class="fa fa-users" aria-hidden="true"></i> No.of People :</label>
-															<select class="form-control">
-																<option></option>
-																<option>1 Person</option>
-																<option>2 People</option>
-																<option>3 People</option>
-																<option>4 People</option>
-																<option>5 People</option>
-																<option>More</option>
-															</select>
-													</div>
-													<div class="clearfix"> </div>
-													<div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
-														  <input type="submit" value="Make a Reservation">
-													</div>
-											</form>
-								</div>
-									</div>
 								</div>
 							</div>
 						</div>
-						<!-- //Modal1 -->
+	<!-- //Modal1 -->
 			
-			<!--//content-inner-section-->
+	<!--//content-inner-section-->
+			
+		<div class="ab-w3l-spa">
+		<h2> Cost of the System </h2>			 
+		<p>Domain Name Cost = 950 BDT</p>
+		<p>Domain Hosting Cost = 995 BDT(Yearly), 1GB Linux Hosting, 1GB Disk Space, 25GB/Month Bandwidth, 50 Email Accounts</p>
+		<p>Server Equipments Maintainance Cost = 1,00,000 BDT(Yearly)</p>
+		<p>IT People's Cost(For Checking\Fix Problems) = 1,00,000 BDT(Yearly)</p>
+		</div>
+
+
+
+
 
  <!-- Footer -->
  <div class="w3l-footer">

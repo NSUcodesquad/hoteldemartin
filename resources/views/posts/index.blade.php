@@ -144,7 +144,7 @@
 	<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
     {{ Auth::user()->name }} <span class="caret"></span></a>
 
-    		@if({{ Auth::user()->email }} == {{$posts->email}} )
+    		
 					@if(count($posts) > 0) 
 						@foreach($posts as $posts) 
 						<div class = 'well' >
@@ -165,26 +165,8 @@
 			
 			
 					@endif 
-
-
-			
-
-			@else
-            <p> no post found </p>
-			@endif 
-
-
-    
-
-
 		</div>
 	</div>
-
-
-
-
-
-
 
 
 
@@ -194,22 +176,22 @@
 				<div class="col-md-2 footer-info-grid links">
 					<h4>Quick links</h4>
 					<ul>
-						       <li><a href="index">Home</a></li> 
-								<li><a href="about">About</a></li> 
-								<li><a href="codes">Services</a></li> 
-								<li><a href="gallery">Gallery</a></li> 
-								<li><a href="contact">Contact</a></li> 
+						       <li><a href="/">Home</a></li> 
+								<li><a href="/about">About</a></li> 
+								<li><a href="/gallery">Gallery</a></li> 
+								<li><a href="/login">Login</a></li> 
+								<li><a href="/contact">Contact</a></li> 
 					</ul>
 				</div>
 				<div class="col-md-3 footer-info-grid address">
 					<h4>Address</h4>
 					<address>
 						<ul>
-							<li>Mexico United States 3000</li>
-							<li>40019 Honey Street</li>
-							<li>BO,Mexico</li>
-							<li>Telephone : +1 (734) 123-4567</li>
-							<li>Email : <a class="mail" href="mailto:mail@example.com">info(at)example.com</a></li>
+							<li>420, Hotel Motel Road</li>
+							<li>Kolatoli Beach, Cox's Bazar</li>
+							<li>Chittagong, Bangladesh</li>
+							<li>Telephone : +420 00112233</li>
+							<li>Email : <a class="mail" href="mailto:info@hoteldemartin.org">info(at)hoteldemartin.org</a></li>
 						</ul>
 					</address>
 				</div>
@@ -264,9 +246,9 @@
 	   </div>
      </div>
 
-			<!--w3agile_footer_copy -->
+		
 			<div class="w3agile_footer_copy">
-				    <p>© 2017 Resort. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				    <p>© 2018 HOTELDEMARTIN. All rights reserved | Design by <a href="http://hoteldemartin.org/">CODEQUUAD</a></p>
 			</div>
 		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
