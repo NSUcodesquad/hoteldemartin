@@ -23,7 +23,10 @@
                         <a class="nav-link" href="\reserve">{{ __('Reserve') }}</a></button>
 
                         <button type="submit" class="button button1">
-                        <a class="nav-link" href="\review">{{ __('Review') }}</a></button>
+                        <a class="nav-link" href="\reviews">{{ __('See Reviews') }}</a></button>
+
+                        <button type="submit" class="button button1">
+                        <a class="nav-link" href="\makereview">{{ __('Make Reviews') }}</a></button>
 
                          <button type="submit" class="button button1">
                         <a class="nav-link" href="\contact">{{ __('Contact') }}</a></button>

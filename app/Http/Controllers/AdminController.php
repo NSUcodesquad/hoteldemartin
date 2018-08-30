@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Posts;
-use DB;
 
-
-class PostsController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +13,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts =  Posts::all();
-        return view('posts.index')->with('posts', $posts);
+        //
     }
 
     /**
@@ -27,7 +23,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('posts.reserve');
+        //
     }
 
     /**
@@ -38,31 +34,8 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required',
-            'roomtype' => 'required',
-            'persons' => 'required',
-            'reservefrom' => 'required',
-            'reserveto' => 'required',
-            'phoneno' => 'required'
-        ]);
-
-        // Create Post
-        $posts = new Posts;
-        $posts->name = $request->input('name');
-        $posts->email = $request->input('email');
-        $posts->reservefrom = $request->input('reservefrom');
-        $posts->reserveto = $request->input('reserveto');
-        $posts->persons = $request->input('persons');
-        $posts->roomtype = $request->input('roomtype');
-        $posts->phoneno = $request->input('phoneno');
-        $posts->address= $request->input('address');
-        $posts->user_id = auth()->user()->id;
-        $posts->save();
-        return redirect('/posts')->with('success', 'Post Created');
+        //
     }
-
 
     /**
      * Display the specified resource.
@@ -70,11 +43,9 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($user_id)
+    public function show($id)
     {
-        $user_id = auth()->user()->id;
-        $posts = Posts::find($user_id);
-        return view('posts.show');
+        //
     }
 
     /**

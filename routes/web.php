@@ -14,11 +14,13 @@
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/makereview', 'PagesController@makereview');
 Route::get('/gallery', 'PagesController@gallery');
 Route::get('/reserve', 'PagesController@reserve');
 Route::resource('posts', 'PostsController');
 Route::resource('reviews', 'ReviewController');
 Route::resource('contacts', 'ContactController');
+Route::resource('admins', 'AdminController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

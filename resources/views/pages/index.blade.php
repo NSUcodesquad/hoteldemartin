@@ -672,13 +672,6 @@
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 
-
-
-
-
-
-
-
 <!-- Button for LOGIN/REG -->
 <style>
 .button {
@@ -703,18 +696,6 @@
 </style>
 
 <!--// Button for LOGIN/REG -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

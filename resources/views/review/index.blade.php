@@ -1,9 +1,9 @@
-
+<?php
+?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>HotelDeMartin</title>
-
 
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
@@ -16,10 +16,48 @@
 <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 <!--//web-fonts-->
+
+
+
+
+
+
+<!-- Button for LOGIN/REG -->
+  <style>
+.button {
+    background-color: rgb(97, 185, 255); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+.button1 {width: 100%;}
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
+</style>
+
+<!--// Button for LOGIN/REG -->
+
+
 </head>
+
+
+
+
 <body>
-<!--/main-header-->
-  <div class="w3layouts-top-strip">
+
+
+
+<div class="w3layouts-top-strip">
 			<div class="top-srip-agileinfo">
 				<div class="w3ls-social-icons text-left">
 					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
@@ -57,12 +95,12 @@
 									<!-- navbar-header -->
 									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 										
-				 <ul class="nav navbar-nav">
-											<li><a href="/">Home</a></li>
+				           <ul class="nav navbar-nav">
+											    <li><a href="/">Home</a></li>
 												<li><a href="/about">About</a></li>
                                                 <li><a href="/gallery">Gallery</a></li>
-                                                <li><a href="/login">Login</a></li>
-												<li class="active"><a href="/contact">Contact</a></li>
+                                                <li class="active"><a href="/login">login</a></li>
+												<li><a href="/contact">Contact</a></li>
 
 											
 										</ul>
@@ -71,7 +109,9 @@
 									</div>
 									<div class="clearfix"> </div>	
 								</nav>
+								
 
+												</div>
 					
 							</div> 
 
@@ -81,95 +121,74 @@
 		 </div>
   <!--/banner-section-->
  <!--//main-header-->
-	        
-						<!-- breadcrumb -->
-	<div class="w3_breadcrumb">
+    <!-- breadcrumb -->
+
+
+
+
+    <div class="w3_breadcrumb">
 	<div class="breadcrumb-inner">	
 			<ul>
-				<li><a href="index">Home</a> <i>/</i></li>
-				
-				<li>Contact</li>
+				<li><a href="index">Home</a> <i> /</i></li>
+				<li>Login</li>
 			</ul>
 		</div>
 	</div>
-<!-- //breadcrumb -->
-			<!--/content-inner-section-->
-				  <div class="w3_content_agilleinfo_inner">
-					    <div class="container">
-							<div class="inner-agile-w3l-part-head">
-					           <h2 class="w3l-inner-h-title">Contact</h2>
-								
-							</div>
-									<div class="w3_mail_grids">
-									{!! Form::open(['action' => 'ContactController@store','method' => 'POST',  'enctype' => 'multipart/form-data']) !!}
-										<div class="form-group">
-											{{Form::label('name', 'Name')}}
-											{{Form::text('name', '', ['id' => 'name','class' => 'form-control', 'placeholder' => 'Enter Name'])}}
-										</div>
-										<div class="form-group">
-											{{Form::label('email', 'Email')}}
-											{{Form::email('email', '', ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'Enter Email'])}}
-										</div>
-										<div class="form-group">
-											{{Form::label('phoneno', 'Phone No')}}
-											{{Form::number('phoneno', '', ['id' => 'phone no', 'class' => 'form-control', 'placeholder' => 'Enter Phoneno'])}}
-										</div>
-										<div class="form-group">
-											{{Form::label('msg', 'Message')}}
-											{{Form::textarea('msg', '', ['id' => 'msg', 'class' => 'form-control', 'placeholder' => 'Write Your Message.'])}}
-										</div>
-										{{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
-									{!! Form::close() !!}
-							</div>
-					   </div>
-							<div class=" map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118830.37498009244!2d91.932860599034!3d21.450883578282923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc7ea2ab928c3%3A0x3b539e0a68970810!2sCox&#39;s+Bazar!5e0!3m2!1sen!2sbd!4v1533243433769" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-							</div>
-				  </div>
-			<!--//content-inner-section-->
-			<div class="w3l_contact-bottom">
-		<div class="container">
+
+
+
+
+    <div class="w3_content_agilleinfo_inner">
+	<div class="container">
+
+
+    <button type="submit" class="button button1">
+    <a class="nav-link" href="\login">{{ __('Back') }}</a></button>
+
+    
+	<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+    {{ Auth::user()->name }} <span class="caret"></span></a>
+
+
+
+
+
+	<div class "container">
+			<h3>Name: {{$posts->name}}</h3>
+			<h3>Email: {{$posts->email}}</h3>
+			<h3>Phone no: {{$posts->invoiceno}}</h3>
 			
-			<div class="w3ls_con_grids">
-				
-				<div class="w3ls_footer_grid">
-					<div class="col-md-4 con-ions-left">
-						<div class="con-ions-left-w3l">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-						</div>
-						<div class="con-grid-w3l-leftr">
-							<h4>Location</h4>
-							<p>420 Hotel Motel Road, Cox's Bazar,Bangladesh</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="col-md-4 con-ions-left">
-						<div class="con-ions-left-w3l">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</div>
-						<div class="con-grid-w3l-leftr">
-							<h4>Email</h4>
-							<a href="mailto:info@hoteldemartin.org">info@hoteldemartin.org</a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="col-md-4 con-ions-left">
-						<div class="con-ions-left-w3l">
-							<i class="fa fa-phone" aria-hidden="true"></i>
-						</div>
-						<div class="con-grid-w3l-leftr">
-							<h4>Call Us</h4>
-							<p>(+880) 168 377 1011</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
+			<h3>Message: {{$posts->body}}</h3>
+			<h3>Room Type: {{$posts->roomtype}}</h3> 
 			</div>
+
+
+<!--
+					@if(count($reviews) > 0) 
+						@foreach($reviews as $reviews) 
+						<div class = 'well' >
+						<h3><a href = "\reviews\{{$reviews -> id}}"> {{$reviews->name}}</a></h3>
+						<h3>{{$reviews->email}}</h3>
+						<h3>{{$reviews->invoiceno}}</h3>
+						<h3>{{$reviews->body}}</h3>
+						<h3>{{$reviews->roomtype}}</h3>
+						@endforeach
+
+
+
+					@else
+						<p> no post found </p>
+			
+			
+					@endif 
+
+					-->
 		</div>
 	</div>
- <!-- Footer -->
- <div class="w3l-footer">
+
+
+
+<div class="w3l-footer">
 		<div class="container">
          <div class="footer-info-agile">
 				<div class="col-md-2 footer-info-grid links">
@@ -186,7 +205,7 @@
 					<h4>Address</h4>
 					<address>
 						<ul>
-							<li>42o, Hotel Motel Road</li>
+							<li>420, Hotel Motel Road</li>
 							<li>Kolatoli Beach, Cox's Bazar</li>
 							<li>Chittagong, Bangladesh</li>
 							<li>Telephone : +420 00112233</li>
@@ -274,12 +293,6 @@
 				<script src="js/main.js"></script>
 
 <!--/script-->
-	<script src="js/simplePlayer.js"></script>
-			<script>
-				$("document").ready(function() {
-					$("#video").simplePlayer();
-				});
-			</script>
 			<!-- flexSlider -->
 					<script defer src="js/jquery.flexslider.js"></script>
 					<script type="text/javascript">
@@ -292,7 +305,15 @@
 					  });
 					});
 				  </script>
-
+	<!-- Calendar -->
+				<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+						  });
+				  </script>
+			<!-- //Calendar -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 
@@ -325,3 +346,13 @@
 <!-- //for bootstrap working -->
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

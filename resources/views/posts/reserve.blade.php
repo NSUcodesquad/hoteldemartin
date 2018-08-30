@@ -151,17 +151,16 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
-									
                                     </form>
                                 </div>
                             </li>
 
 
 
-
+    <button type="submit" class="button button1">
+    <a class="nav-link" href="\login">{{ __('Back') }}</a></button>
 
 
 
@@ -172,41 +171,36 @@
 {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         <div class="form-group">
             {{Form::label('name', 'Name')}}
-            {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Name'])}}
+            {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Enter Name'])}}
         </div>
         <div class="form-group">
             {{Form::label('email', 'Email')}}
-            {{Form::email('email', '', ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'email'])}}
+            {{Form::email('email', '', ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'Enter Smail'])}}
         </div>
 		<div class="form-group">
             {{Form::label('phoneno', 'Phone No')}}
-            {{Form::number('phoneno', '', ['id' => 'phone no', 'class' => 'form-control', 'placeholder' => 'phoneno'])}}
+            {{Form::number('phoneno', '', ['id' => 'phone no', 'class' => 'form-control', 'placeholder' => 'Enter Phoneno'])}}
         </div>
 		<div class="form-group">
             {{Form::label('address', 'Address')}}
-            {{Form::text('address', '', ['id' => 'address', 'class' => 'form-control', 'placeholder' => 'address'])}}
+            {{Form::text('address', '', ['id' => 'address', 'class' => 'form-control', 'placeholder' => 'Enter Address'])}}
         </div>
 		<div class="form-group">
             {{Form::label('reservefrom', 'Reserve From')}}
-            {{Form::date('reservefrom', '', ['id' => 'reservefrom', 'class' => 'form-control', 'placeholder' => 'reservefrom'])}}
+            {{Form::date('reservefrom', '', ['id' => 'reservefrom', 'class' => 'form-control', 'placeholder' => 'When you wanto come?'])}}
         </div>
 		<div class="form-group">
             {{Form::label('reserveto', 'Reserve to')}}
-            {{Form::date('reserveto', '', ['id' => 'reserveto', 'class' => 'form-control', 'placeholder' => 'reserveto'])}}
+            {{Form::date('reserveto', '', ['id' => 'reserveto', 'class' => 'form-control', 'placeholder' => 'When you want to leave?'])}}
         </div>
 		<div class="form-group">
             {{Form::label('persons', 'Persons')}}
-            {{Form::number('persons', '', ['id' => 'persons', 'class' => 'form-control', 'placeholder' => 'persons'])}}
+            {{Form::number('persons', '', ['id' => 'persons', 'class' => 'form-control', 'placeholder' => 'How Many Persons will stay?'])}}
         </div>
 		<div class="form-group">
             {{Form::label('roomtype', 'Room Type')}}
-            {{Form::number('roomtype', '', ['id' => 'roomtype', 'class' => 'form-control', 'placeholder' => 'Single=1, Double=2, Cottage=3, Villa=4'])}}
+            {{Form::number('roomtype', '', ['id' => 'roomtype', 'class' => 'form-control', 'placeholder' => 'Enter 1 If Single Room,2 for Double, 3 for Cottage, 4 for Villa'])}}
         </div>
-
-		<div class="form-group">
-		echo Form::select('size', ['L' => 'Large', 'S' => 'Small']);
-		</div>
-
 
         {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}

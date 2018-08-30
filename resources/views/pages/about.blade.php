@@ -20,7 +20,7 @@
   <div class="w3layouts-top-strip">
 			<div class="top-srip-agileinfo">
 				<div class="w3ls-social-icons text-left">
-					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
 					<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
 					<a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
 					<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
@@ -342,7 +342,7 @@
 									 <h6 class="bed"><i class="fa fa-bed" aria-hidden="true"></i></h6>
 							</div>
 							<div class="price-selet pric-sclr1">		    			   
-								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="/login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 							</div>
 						</div>
 					</div>
@@ -369,7 +369,7 @@
 								
 							</div>
 							<div class="price-selet pric-sclr2">
-								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="/login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 
 							</div>
 						</div>
@@ -395,7 +395,7 @@
 								<h6 class="bed three"><i class="fa fa-bed" aria-hidden="true"></i></h6>
 							</div>
 							<div class="price-selet pric-sclr3">
-								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="/login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 							</div>
 						</div>
 					</div>
@@ -420,7 +420,7 @@
 								<h6 class="bed four"><i class="fa fa-bed" aria-hidden="true"></i></h6>
 							</div>
 							<div class="price-selet pric-sclr4">
-								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="/login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 							</div>
 						</div>
 					</div>

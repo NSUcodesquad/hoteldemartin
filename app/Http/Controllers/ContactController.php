@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Contact;
 //use App\Posts;
 use DB;
 use App\Http\Requests;
@@ -16,7 +17,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-       // $contact =  Contact::all();
+        $contacts =  Contact::all();
         return view('pages.contact');
     }
 
@@ -45,21 +46,14 @@ class ContactController extends Controller
             'msg' => 'required',
         ]);
 
-
-        $contacts = [];
-
-        $contacts['name'] = $request->get('name');
-        $contacts['email'] = $request->get('email');
-        $contacts['msg'] = $request->get('msg');
-
         // Create Post
-         // $contact = new Contact;
-      //  $contact->name = $request->input('name');
-       // $contact->email = $request->input('email');
-      //  $contact->phoneno = $request->input('phoneno');
-      //  $contact->msg = $request->input('msg');
-       // $contact->id = auth()->user()->id;
-      //  $contact->save();
+            $contacts = new Contact;
+            $contacts->name = $request->input('name');
+            $contacts->email = $request->input('email');
+            $contacts->phoneno = $request->input('phoneno');
+            $contacts->msg = $request->input('msg');
+            //$contact->id = auth()->user()->id;
+            $contacts->save();
         return redirect('\contact')->with('success', 'Message Send');
     }
 
@@ -71,8 +65,8 @@ class ContactController extends Controller
      */
     public function show($id)
     {
-        $contact = Posts::find($id);
-        return view('contact.show') -> with('posts', $contacts); 
+        $contacts = Contacts::find($id);
+        return view('contact.show') -> with('contacts', $contacts); 
     }
 
     /**

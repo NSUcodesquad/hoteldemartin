@@ -132,42 +132,45 @@
 				<li>Login</li>
 			</ul>
 		</div>
+
+
+			<div class "container">
+			<h3>Name: {{$posts->name}}</h3>
+			<h3>Email: {{$posts->email}}</h3>
+			<h3>Phone no: {{$posts->phoneno}}</h3>
+			<h3>Reserve From: {{$posts->reservefrom}}</h3>
+			<h3>Reserve To: {{$posts->reserveto}}</h3>
+			<h3>Persons: {{$posts->persons}}</h3>
+			<h3>Room Type: {{$posts->roomtype}}</h3> 
+			</div>
+
+<!--
+		<div class="panel-body">
+                    <a href="/posts/create" class="btn btn-primary">Create Post</a>
+                    <h3>Your Blog Posts</h3>
+                    @if(count($posts) > 0)
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Title</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            @foreach($posts as $post)
+                                <tr>
+                                    <td>{{$post->Name}}</td>
+                                    <td><a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a></td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    @else
+                        <p>You have no posts</p>
+                    @endif
+                </div> -->
+
 	</div>
-
-
-		 <h3>{{$posts->name}}</h3>
 	</div>
-
-
-
-    <div class="w3_content_agilleinfo_inner">
-	<div class="container">
-    <h3>{{$posts->name}}</h3>
-	<h3>{{$posts->email}}</h3>
-	<h3>{{$posts->phoneno}}</h3>
-	<h3>{{$posts->reservefrom}}</h3>
-	<h3>{{$posts->reserveto}}</h3>
-	<h3>{{$posts->persons}}</h3>
-	<h3>{{$posts->roomtype}}</h3>
-
-	</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <div class="w3l-footer">
 		<div class="container">

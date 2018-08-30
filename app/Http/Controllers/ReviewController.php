@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Posts;
+//use App\Posts;
+use App\Review;
 use DB;
+use App\Http\Requests;
 
-class ReviewContoller extends Controller
+
+class ReviewController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +18,8 @@ class ReviewContoller extends Controller
      */
     public function index()
     {
-        $posts =  Posts::all();
-        return view('review.index')->with('posts', $posts);
+        $reviews =  Review::all();
+        return view('review.index');
     }
 
     /**
@@ -24,9 +27,9 @@ class ReviewContoller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function createreview()
+    public function create()
     {
-        return view('review.review');
+        return view('pages.makereview');
     }
 
     /**
@@ -35,26 +38,28 @@ class ReviewContoller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function storereview(Request $request)
+    public function store(Request $request)
     {
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required',
             'invoiceno' => 'required',
             'body' => 'required',
+            'roomtype' => '',
             'rate' => 'required'
         ]);
 
         // Create Post
-        $posts = new Posts;
-        $posts->name = $request->input('name');
-        $posts->email = $request->input('email');
-        $posts->invoiceno = $request->input('invoiceno');
-        $posts->body = $request->input('body');
-        $posts->rate = $request->input('rate');
-        $posts->id = auth()->user()->id;
-        $posts->save();
-        return redirect('/postsreview')->with('success', 'Post Created');
+        $reviews = new Review;
+        $reviews->name = $request->input('name');
+        $reviews->email = $request->input('email');
+        $reviews->invoiceno = $request->input('invoiceno');
+        $reviews->body = $request->input('body');
+        $reviews->roomtype = $request->input('roomtype');
+       // $reviews->rate = $request->input('rate');
+        $reviews->id = auth()->user()->id;
+        $reviews->save();
+        return redirect('/reviews')->with('success', 'Post Created');
     }
 
     /**
@@ -63,10 +68,10 @@ class ReviewContoller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function showreview($id)
+    public function show($id)
     {
-        $posts = Posts::find($id);
-        return view('review.show') -> with('posts', $posts); 
+        $reviews = Review::find($id);
+        return view('review.show') -> with('reviews', $reviews); 
     }
 
     /**
@@ -75,7 +80,7 @@ class ReviewContoller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function editreview($id)
+    public function edit($id)
     {
         //
     }

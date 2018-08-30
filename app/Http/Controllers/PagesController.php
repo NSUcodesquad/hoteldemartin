@@ -32,5 +32,11 @@ class PagesController extends Controller
     }
 
 
+    public function makereview()
+    {
+        return view('pages.makereview');
+    }
+
+
     
 }
