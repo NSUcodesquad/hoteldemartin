@@ -144,27 +144,69 @@
 	<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
     {{ Auth::user()->name }} <span class="caret"></span></a>
 
-    		
-					@if(count($posts) > 0) 
+    		<div class="w3_content_agilleinfo_inner">
+					<div class="container">
+
+
+					@if($posts->user_id = Auth::user()->id)
+        				
+					@if(count($posts) > 0 ) 
 						@foreach($posts as $posts) 
-						<div class = 'well' >
-						<h3><a href = "\posts\{{$posts -> id}}"> {{$posts->name}}</a></h3>
-						<h3>{{$posts->email}}</h3>
-						<h3>{{$posts->phoneno}}</h3>
-						<h3>{{$posts->address}}</h3>
-						<h3>{{$posts->reservefrom}}</h3>
-						<h3>{{$posts->reserveto}}</h3>
-						<h3>{{$posts->persons}}</h3>
-						<h3>{{$posts->roomtype}}</h3>
-						@endforeach
+						
+
+
+					<table class ="table table-striped">
+                            <tr>
+							<h3><a href = "\posts\{{$posts -> id}}"> {{$posts->name}}</a></h3>
+                            <th>Name</th>
+							<td>{{$posts->name}}</a> </td>
+                            </tr>
+							<tr>
+							<th>Phone No.</th>
+							<td>{{$posts->phoneno}}</a> </td>
+							</tr>
+							<tr>
+							<th>Address</th>
+							<td>{{$posts->address}}</a> </td>
+							</tr>
+							<tr>
+							<th>Reserve From</th>
+							<td>{{$posts->reservefrom}}</a> </td>
+							</tr>
+							<tr>
+							<th>Reserve To</th>
+							<td>{{$posts->reserveto}}</a> </td>
+							</tr>
+							<tr>
+							<th>Persons/th>
+							<td>{{$posts->persons}}</a> </td>
+							</tr>
+							<tr>
+							<th>Room Type</th>
+							<td>{{$posts->roomtype}}</a> </td>
+							</tr>
+							
+							</table>
+
+					@endforeach
+
+					@else
+					<p> no post found </p>
+
+
+					@endif 
 
 
 
 					@else
-						<p> no post found </p>
-			
-			
+					<p> no post found </p>
+
+
 					@endif 
+					</div>
+					</div>
+
+
 		</div>
 	</div>
 

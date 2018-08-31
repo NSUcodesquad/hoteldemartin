@@ -324,8 +324,11 @@
 							</select>
 					</div>
 					<div class="clearfix"> </div>
-					<div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
-						  <input type="submit" a href="\login" value="Make a Reservation">
+					<!--<div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
+						  <input type="submit" a href="\login" value="Make a Reservation">-->
+
+					<button type="submit" class="button button1">
+                        <a class="nav-link" href="\login">{{ __('Make a Reservation') }}</a></button>
 					</div>
 			</form>
 								</div>
@@ -368,7 +371,7 @@
 									 <h6 class="bed"><i class="fa fa-bed" aria-hidden="true"></i></h6>
 							</div>
 							<div class="price-selet pric-sclr1">		    			   
-								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="\login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 							</div>
 						</div>
 					</div>
@@ -395,7 +398,7 @@
 								
 							</div>
 							<div class="price-selet pric-sclr2">
-								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="\login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 
 							</div>
 						</div>
@@ -421,7 +424,7 @@
 								<h6 class="bed three"><i class="fa fa-bed" aria-hidden="true"></i></h6>
 							</div>
 							<div class="price-selet pric-sclr3">
-								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="\login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 							</div>
 						</div>
 					</div>
@@ -446,7 +449,7 @@
 								<h6 class="bed four"><i class="fa fa-bed" aria-hidden="true"></i></h6>
 							</div>
 							<div class="price-selet pric-sclr4">
-								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="\login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 							</div>
 						</div>
 					</div>

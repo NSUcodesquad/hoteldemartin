@@ -131,18 +131,31 @@
 				<li><a href="index">Home</a> <i> /</i></li>
 				<li>Login</li>
 			</ul>
+				<div class="w3_content_agilleinfo_inner">
+					<div class="container">
+					<table class ="table table-striped">
+                            <tr>
+                                <th>Title</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+
+					</table>
+					</div>
+					</div>
+
+					
 		</div>
 
-
-			<div class "container">
-			<h3>Name: {{$posts->name}}</h3>
+			
+			<!--<h3>Name: {{$posts->name}}</h3>
 			<h3>Email: {{$posts->email}}</h3>
 			<h3>Phone no: {{$posts->phoneno}}</h3>
 			<h3>Reserve From: {{$posts->reservefrom}}</h3>
 			<h3>Reserve To: {{$posts->reserveto}}</h3>
 			<h3>Persons: {{$posts->persons}}</h3>
 			<h3>Room Type: {{$posts->roomtype}}</h3> 
-			</div>
+			</div>-->
 
 <!--
 		<div class="panel-body">
@@ -169,7 +182,9 @@
                     @endif
                 </div> -->
 
-	</div>
+
+
+
 	</div>
 
 <div class="w3l-footer">

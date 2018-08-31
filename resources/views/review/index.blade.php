@@ -152,16 +152,35 @@
 
 
 
-
+<!--
 	<div class "container">
-			<h3>Name: {{$posts->name}}</h3>
-			<h3>Email: {{$posts->email}}</h3>
-			<h3>Phone no: {{$posts->invoiceno}}</h3>
+			<h3>Name: {{$reviews->name}}</h3>
+			<h3>Email: <h3>
+			<h3>Phone no: {{$reviews->invoiceno}}</h3>
 			
-			<h3>Message: {{$posts->body}}</h3>
-			<h3>Room Type: {{$posts->roomtype}}</h3> 
+			<h3>Message: {{$reviews->body}}</h3>
+			<h3>Room Type: {{$reviews->roomtype}}</h3> 
 			</div>
+-->
 
+			@if(count($contacts) > 0) 
+						@foreach($reviews as $reviews) 
+						<div class = 'well' >
+						<h3><a href = "\reviews\{{$posts -> id}}"> {{$reviews->name}}</a></h3>
+						<h3>{{$reviews->email}}</h3>
+						<h3>{{$reviews->invoiceno}}</h3>
+						<h3>{{$reviews->body}}</h3>
+					
+						<h3>{{$reviews->roomtype}}</h3>
+						@endforeach
+
+
+
+					@else
+						<p> no post found </p>
+			
+			
+					@endif 
 
 <!--
 					@if(count($reviews) > 0) 

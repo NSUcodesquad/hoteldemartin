@@ -191,6 +191,89 @@
 			</div>
 		
 	<!-- //welcome -->
+
+
+
+
+	<!-- about-bottom -->
+	<div class="about-bottom">
+
+			<h3 class="tittle why">why choose us ?</h3>
+			<p>Need the Luxury with nature it's the best place with combining all.</p>
+			<div class="panel-group w3l_panel_group_faq" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Restaurant & Banquets
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				  <div class="panel-body panel_text">
+					********
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Transportation Included
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				   <div class="panel-body panel_text">
+				   ********
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>The best care for our precious visitors
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				   <div class="panel-body panel_text">
+				   ********
+				  </div>
+				</div>
+				
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Pool Deluxe Room
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				   <div class="panel-body panel_text">
+				   ********
+				  </div>
+				</div>
+				
+			  </div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //about-bottom -->
+
+
+
+
+
+
+
+
+
+
 	</div>
 </div>
 	 <div class="team-section">
@@ -342,7 +425,7 @@
 									 <h6 class="bed"><i class="fa fa-bed" aria-hidden="true"></i></h6>
 							</div>
 							<div class="price-selet pric-sclr1">		    			   
-								<a href="/login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="\login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 							</div>
 						</div>
 					</div>
@@ -369,7 +452,7 @@
 								
 							</div>
 							<div class="price-selet pric-sclr2">
-								<a href="/login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="\login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 
 							</div>
 						</div>
@@ -395,7 +478,7 @@
 								<h6 class="bed three"><i class="fa fa-bed" aria-hidden="true"></i></h6>
 							</div>
 							<div class="price-selet pric-sclr3">
-								<a href="/login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="\login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 							</div>
 						</div>
 					</div>
@@ -420,7 +503,7 @@
 								<h6 class="bed four"><i class="fa fa-bed" aria-hidden="true"></i></h6>
 							</div>
 							<div class="price-selet pric-sclr4">
-								<a href="/login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+								<a href="\login" data-toggle="modal" data-target="#myModal1" >Book Now</a>
 							</div>
 						</div>
 					</div>

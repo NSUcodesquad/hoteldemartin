@@ -72,9 +72,9 @@ class PostsController extends Controller
      */
     public function show($user_id)
     {
-        $user_id = auth()->user()->id;
-        $posts = Posts::find($user_id);
-        return view('posts.show');
+        $user_id == auth()->user()->id;
+        $posts == Posts::find($user_id);
+        return view('posts.index');
     }
 
     /**
